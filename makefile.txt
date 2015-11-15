@@ -1,0 +1,4 @@
+project: diary.o
+	cc diary.o -o project
+diary.o: diary.c string.h terminos.h time.h unistd.h
+	cc -Wall -c diary.c
